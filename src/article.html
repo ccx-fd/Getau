@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div align="center">
+  <table  style="width: 60%;border: 1px solid red">
+    <tr style="border: red 1px solid">
+      <td style="border: red 1px solid">
+        <ul style="float: right; list-style-type: none;">
+          <li>
+            <router-link>登录</router-link>&nbsp;&nbsp;
+            <router-link :to="" >用户注册</router-link>&nbsp;&nbsp;
+            <button @click="register" style="border: 0px;background: goldenrod; color: white">商家免费注册</button>
+          </li>
+        </ul>
+      </td>
+    </tr>
+    <tr style="border: red 1px solid">
+      <td style="border: red 1px solid">
+        <ul>
+          <li style="float: left; list-style-type: none;"><img src=""></li>
+          <li style="float: left; list-style-type: none;">
+            <input value="搜索你想了解的澳洲" type="text" style="border: 2px solid #cccccc">
+            <button style=" border:0px;margin-top: 10px;width: 100px;height: 40px;color: white;border-radius: 5px;background-color: orange;">
+              搜索
+            </button>
+          </li>
+          <li style="float: right; list-style-type: none;">
+
+            &nbsp;&nbsp;&nbsp;&nbsp;全部分类&nbsp;&nbsp;&nbsp;&nbsp;
+            <router-link :to="">折扣信息</router-link>&nbsp;&nbsp;&nbsp;&nbsp;
+            <router-link :to="">发现</router-link>&nbsp;&nbsp;&nbsp;&nbsp;
+          </li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+  <hr/>
+</div>
+
+</body>
+<script>
+
+</script>
+</html>
