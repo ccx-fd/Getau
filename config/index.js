@@ -15,10 +15,11 @@ module.exports = {
       '/api':{
 
         target: "https://getau.com.au",      //接口域名
-        changeOrigin: true,       //是否跨域
+        // changeOrigin: true,       //是否跨域
         pathRewrite: {
-          // '^/apis': ''    //需要rewrite重写的
-        }
+          '^/api': ''    //需要rewrite重写的
+        },
+        secure: false
       }
     },
 
