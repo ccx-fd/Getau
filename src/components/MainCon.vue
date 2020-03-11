@@ -72,11 +72,11 @@
       //获取数据
       this.axios("/api/wp-json/getau/v1/posts/61102").then(res =>{
       // this.axios("https://getau.com.au/wp-json/getau/v1/posts/61102").then(res =>{ //这样是可以获取的正确接口数据
-        this.msg = res.data.content;
-        console.log(res.data);
-        // this.msg = res.data.title;
-        // this.msg = res.data.content;
-        // this.msg = res.data.content;
+        this.msg = res.data.data.content;
+        console.log(res.data.data);
+        // this.msg = res.data.data.title;
+        // this.msg = res.data.data.content;
+        // this.msg = res.data.data.content;
       })
     }
   }
