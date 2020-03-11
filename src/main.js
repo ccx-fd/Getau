@@ -7,7 +7,7 @@ import axios from 'axios'
 import QS from 'qs'
 
 Vue.prototype.qs = QS
-Vue.prototype.$axios = axios
+Vue.prototype.axios = axios
 Vue.config.productionTip = false
 
 

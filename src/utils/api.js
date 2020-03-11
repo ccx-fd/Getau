@@ -20,3 +20,4 @@ import { get, post } from "./axios";
 export const getInfo = params => get("https://getau.com.au/wp-json/getau/v1/posts/61102");
 //以后肯定要改成*******
 //export const getPost = id => get(`https://getau.com.au/wp-json/getau/v1/posts/${id}`);
+//https://cnodejs.org/api/v1/apis/wp-json/getau/v1/posts/61102

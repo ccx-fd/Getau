@@ -1,36 +1,25 @@
 <template>
-  <main-nav align="center">
-    <table >
-      <tr>
-        <td>
-          <ul style="float: right; list-style-type: none;">
-            <li>
-              <router-link to="">登录</router-link>&nbsp;&nbsp;
-              <router-link to="" >用户注册</router-link>&nbsp;&nbsp;
-              <button class="btn-register" @click="register">商家免费注册</button>
-            </li>
-          </ul>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <ul style="float: left; list-style-type: none;">
-            <li >
-              知澳图标
-              <input value="搜索你想了解的澳洲" type="text">
-              <button class ="btn-search">
-                搜索
-              </button>
-              &nbsp;&nbsp;&nbsp;&nbsp;全部分类&nbsp;&nbsp;&nbsp;&nbsp;
-              <router-link to="">折扣信息</router-link>&nbsp;&nbsp;&nbsp;&nbsp;
-              <router-link to="">发现</router-link>&nbsp;&nbsp;&nbsp;&nbsp;
-            </li>
-          </ul>
-        </td>
-      </tr>
-    </table>
-    <hr/>
-  </main-nav>
+  <div class="header">
+    <div class="header-first">
+      <div class="header-first-right">
+        <router-link to="">登录</router-link>
+        <router-link to="" class="user-register">用户注册</router-link>
+        <button class="btn-register">商家免费注册</button>
+      </div>
+    </div>
+    <div class="header-second">
+      <img src="" alt="知澳|专业服务搜索平台">
+      <div>
+        <input value="搜索你想了解的澳洲" type="text">
+        <button class ="btn-search">
+          搜索
+        </button>
+      </div>
+      <router-link to="">全部分类</router-link>
+      <router-link to="">折扣信息</router-link>
+      <router-link to="">发现</router-link>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -52,9 +41,44 @@
     height: 40px;
     color: white;
     border-radius: 5px;
-    background-color: orange;
+    background-color: gold;
+  }
+  .user-register{
+    color: orange;
   }
   input{
     border: 2px solid #cccccc;
+    width: 300px;
+    height: 40px;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  .router-link-active{
+    text-decoration: none;
+  }
+  .header{
+    /*background-color: red;*/
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .header-first{
+    display: flex;
+    justify-content: flex-end;
+  }
+  .header-first-right{
+    width: 30%;
+    /*flex-direction: row-reverse;*/
+
+    display:flex;
+    justify-content: space-between;
+  }
+  .header-second{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 </style>
